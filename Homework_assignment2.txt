@@ -2,14 +2,17 @@
 Var N, x
 max = -1
 Enter N
-N: = abs(N)
-while N>0
-   x: = N mod 10
-   N: = N div 10
-   if (x mod 2 = 0) and (x>max) then
-        max: = x
-   if max > = 0 then
+if N ∈ Z then
+    N: = abs(N)
+    while N>0
+           x: = N mod 10
+           N: = N div 10
+           if (x mod 2 = 0) and (x>max) then
+               max: = x
+    if max > = 0 then
         print («The greatest digit in the number is», max)
-   else
+    else
         print («No even numbers found»)
+else 
+    print («Invalid data»)
 
